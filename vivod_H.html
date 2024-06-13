@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Холодильники</title>
+</head>
+<body>
+    <h1>Список холодильников</h1>
+    <ul>
+        {% for product in fridge_data %}
+            <li>
+                <a href="{{ product.link }}">{{ product.title }}</a>
+                <p>Цена: {{ product.price }}</p>
+            </li>
+        {% else %}
+            <p>Нет данных.</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
