@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+
+<nav class="navbar">
+        <div class="container">
+                <div class="sidebar">
+                   <h3>Категории товаров</h3>
+                   <ul>
+                                
+                        <li> <a href="{{ url_for('coffee') }}">Кофемашины/кофеварки</a></li>                            
+                        <li><a href="{{ url_for('SVCH') }}">СВЧ</a></li>
+                        <li><a href="{{ url_for('washM') }}">Стиральные машины</a></li>
+                        <li><a href="{{ url_for('washP') }}">Посудомоечные машины</a></li>
+                        <li><a href="{{ url_for('tele') }}">Телевизоры</a></li>
+                        <li><a href="{{ url_for('fridge') }}">Холодильники</a></li>
+                  </ul>
+                </div>
+        </div>
+</nav>
+
+{% endblock %}
